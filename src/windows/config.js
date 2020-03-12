@@ -113,24 +113,24 @@ const BROWSER_PLATFORMS = selectFrom([
       ],
     },
   },
-  {
-    id: 'firefox-win-aarch64',
-    browser: 'Firefox',
-    bits: 64,
-    os: 'win',
-    label: 'Firefox (aarch64)',
-    platform: 'aarch64',
-    platformFilter: {
-      and: [
-        {
-          eq: {
-            platform: 'windows10-aarch64',
-            options: 'opt',
-          },
-        },
-      ],
-    },
-  },
+  // {
+  //   id: 'firefox-win-aarch64',
+  //   browser: 'Firefox',
+  //   bits: 64,
+  //   os: 'win',
+  //   label: 'Firefox (aarch64)',
+  //   platform: 'aarch64',
+  //   platformFilter: {
+  //     and: [
+  //       {
+  //         eq: {
+  //           platform: 'windows10-aarch64',
+  //           options: 'opt',
+  //         },
+  //       },
+  //     ],
+  //   },
+  // },
   {
     id: 'firefox-linux64',
     browser: 'Firefox',
@@ -299,6 +299,24 @@ const BROWSER_PLATFORMS = selectFrom([
       eq: {
         platform: ['android-hw-p2-8-0-aarch64', 'android-hw-p2-8-0-android-aarch64'],
       },
+    },
+  },
+  {
+    id: 'firefox-win-aarch64',
+    browser: 'Firefox',
+    bits: 64,
+    os: 'win',
+    label: 'Firefox (aarch64)',
+    platform: 'aarch64',
+    platformFilter: {
+      and: [
+        {
+          eq: {
+            platform: 'windows10-aarch64',
+            options: 'opt',
+          },
+        },
+      ],
     },
   },
 ]);
